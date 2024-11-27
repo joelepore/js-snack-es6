@@ -26,11 +26,14 @@ for (let squadra of squadreCalcio) {
   squadra.puntiFatti = generateRandomNumber(0, 114);
   squadra.falliSubiti = generateRandomNumber(400, 700);
 }
+const squadreInfo = [];
 // Output
 for (let squadra of squadreCalcio) {
-  console.log('========');
-  for (key in squadra) {
-    console.log(`${key}: ${squadra[key]}`);
-  }
+  squadreInfo.push({
+    puntiFatti: squadra.puntiFatti,
+    falliSubiti: squadra.falliSubiti
+  })
 }
+
+console.log(squadreInfo);
 
