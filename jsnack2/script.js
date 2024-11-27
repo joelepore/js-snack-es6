@@ -17,3 +17,7 @@ const squadreCalcio = [
   { nome: "Lazio", puntiFatti: 0, falliSubiti: 0 },
   { nome: "Atalanta", puntiFatti: 0, falliSubiti: 0 }
 ];
+
+const generateRandomNumber = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
