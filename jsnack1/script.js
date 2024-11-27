@@ -16,3 +16,12 @@ const biciclette = [
   { nome: "Pinarello", peso: 8.4 },
   { nome: "Cervélo", peso: 8.9 }
 ];
+let biciLeggera = biciclette[0];
+
+for (let bici of biciclette) {
+  if (bici.peso < biciLeggera.peso) {
+    biciLeggera = bici;
+  }
+}
+
+console.log(`La bici piu' leggera e' la ${biciLeggera.nome} con un peso di ${biciLeggera.peso}`);
