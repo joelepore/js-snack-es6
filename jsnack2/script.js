@@ -21,8 +21,16 @@ const squadreCalcio = [
 const generateRandomNumber = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
-
+// Logica
 for (let squadra of squadreCalcio) {
-  squadra.puntiFatti = generateRandomNumber(0, 100);
+  squadra.puntiFatti = generateRandomNumber(0, 114);
   squadra.falliSubiti = generateRandomNumber(400, 700);
 }
+// Output
+for (let squadra of squadreCalcio) {
+  console.log('========');
+  for (key in squadra) {
+    console.log(`${key}: ${squadra[key]}`);
+  }
+}
+
